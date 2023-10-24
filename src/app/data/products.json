@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "image": "/products/1.webp",
+        "name": "Nike Dunks 1",
+        "desc": "The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+        "amount": 50
+    },
+    {
+        "id": 1,
+        "image": "/products/2.webp",
+        "name": "Nike Dunks 2",
+        "desc": "Zion's third signature shoe celebrates the dedication he puts in to crafting his singular game. Packed with court-ready tech, it's designed for ballers who are masters of both land and air. Stay low and contained, then explode skywards, with a cushioned return to earth. The Zion 3 helps hold you down—so you can fly your own way.",
+        "amount": 190
+    },
+    {
+        "id": 2,
+        "image": "/products/3.jpeg",
+        "name": "Nike Dunks 3",
+        "desc": "Retro gets modernised with these sleek sneakers inspired by the Nike Daybreak. The era-echoing suede and nylon are paired with a tricolour refresh, and the updated wedge midsole gives you an extra lift. Style, comfort, that iconic Waffle outsole—this is a perfect new addition to your daily rotation.",
+        "amount": 124
+    },
+    {
+        "id": 3,
+        "image": "/products/4.webp",
+        "name": "Nike Dunks 4",
+        "desc": "In love with the classic look of '80s basketball but have a thing for the fast-paced culture of today's game? Meet the Nike Court Vision Low. A classic remixed with at least 20% recycled materials by weight, its crisp upper and stitched overlays keep the soul of the original style. The plush, low-cut collar keeps it sleek and comfortable for your world.",
+        "amount": 250
+    },
+    {
+        "id": 4,
+        "image": "/products/5.webp",
+        "name": "Nike Dunks 5",
+        "desc": "Featuring the original ripple design inspired by Japanese bullet trains, the Nike Air Max 97 lets you push your style full-speed ahead.Taking the revolutionary full-length Nike Air unit that shook up the running world and adding fresh colours and crisp details, it lets you ride in first-class comfort.",
+        "amount": 20
+    },
+    {
+        "id": 5,
+        "image": "/products/6.webp",
+        "name": "Nike Dunks 6",
+        "desc": "A new shoe with old-school appeal—your retro dreams just came true. This pared-back design references the classic AF-1, then leans into '80s style with throwback stitching and varsity-inspired colours. Not everything has to be a throwback, though—modern comfort and durability make them easy to wear any time, anywhere. Time to throw them on and go full force.",
+        "amount": 150
+    }
+]
