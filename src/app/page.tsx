@@ -30,7 +30,15 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center text-black gap-4 p-4">
                 <div className="flex flex-row justify-between items-center w-full">
                   <h3 className="font-semibold text-lg">{product.name}</h3>
-                  <h3 className="font-bold text-2xl">${product.amount}</h3>
+                  <h3 className="font-bold text-2xl flex flex-row justify-center items-center gap-1">
+                    <Image
+                      src={"/USDC-Logo.svg"}
+                      alt="USDC Icon"
+                      height={25}
+                      width={25}
+                    />
+                    {product.amount}
+                  </h3>
                 </div>
                 <p className="text-sm line-clamp-2">{product.desc}</p>
 

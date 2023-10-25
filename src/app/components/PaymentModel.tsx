@@ -7,6 +7,7 @@ import { mainnet } from "viem/chains";
 import useWindowSize from "react-use/lib/useWindowSize";
 import Confetti from "react-confetti";
 import { CheckBadgeIcon, TicketIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 export const neo = {
   id: 2970385,
@@ -239,12 +240,19 @@ const erc20ABI = [
 export default function PaymentModel(props: any) {
   const { width, height } = useWindowSize();
   const [transfer, setTransfer] = useState(false);
+  const [hash, setHash] = useState("");
+  const explorer = "https://evm.ngd.network/";
   const unwatch = client.watchContractEvent({
     address: "0xD0d4C08136877F7E25A355900B20100fBF19562A",
     abi: erc20ABI,
     eventName: "Transfer",
     args: { to: "0xc160Efc3af51ebc6fC4c517cA941a6999Ce0beC0" },
-    onLogs: (logs) => setTransfer(true),
+    onLogs: (logs) => {
+      if (logs[0].transactionHash) {
+        setHash(!null && logs[0].transactionHash);
+      }
+      setTransfer(true);
+    },
   });
   const Token = {
     logoURI: "",
@@ -280,8 +288,17 @@ export default function PaymentModel(props: any) {
                 Your order is placed successfully 🎉
               </div>
               <Confetti width={width} height={height} />
-              <div>
+              <div className="flex justify-center items-center flex-col">
                 <p>Thank you for using NeoPay</p>
+              </div>
+              <div>
+                <Link
+                  className="underline text-sm"
+                  href={explorer + hash}
+                  target="_blank"
+                >
+                  View on blockchain
+                </Link>
               </div>
             </div>
           ) : (

@@ -70,8 +70,14 @@ export default function Cart() {
                     <div className="h-8 w-8 bg-black flex justify-center items-center rounded-lg">
                       <MinusIcon className="h-6 w-6 text-white" />
                     </div> */}
-                    <div className="font-bold text-lg">
-                      ${Products[item.id].amount}
+                    <div className="font-bold text-lg flex flex-row justify-center items-center gap-1">
+                      <Image
+                        src={"/USDC-Logo.svg"}
+                        alt="USDC Icon"
+                        height={20}
+                        width={20}
+                      />
+                      {Products[item.id].amount}
                     </div>
                     <div
                       className="h-8 w-8"
@@ -97,16 +103,37 @@ export default function Cart() {
           <div className="w-full flex flex-col divide-y text-sm">
             <div className="flex justify-between items-center py-2">
               <h3>Tax</h3>
-              <h4>$0</h4>
+              <h4 className="flex flex-row justify-center items-center gap-1">
+                <Image
+                  src={"/USDC-Logo.svg"}
+                  alt="USDC Icon"
+                  height={15}
+                  width={15}
+                />
+                0
+              </h4>
             </div>
             <div className="flex justify-between items-center py-2">
               <h3>Shipping</h3>
-              <h4>$0</h4>
+              <h4 className="flex flex-row justify-center items-center gap-1">
+                <Image
+                  src={"/USDC-Logo.svg"}
+                  alt="USDC Icon"
+                  height={15}
+                  width={15}
+                />
+                0
+              </h4>
             </div>
             <div className="flex justify-between items-center font-bold text-lg py-2">
               <h3>Total</h3>
-              <h4>
-                $
+              <h4 className="flex flex-row justify-center items-center gap-1">
+                <Image
+                  src={"/USDC-Logo.svg"}
+                  alt="USDC Icon"
+                  height={20}
+                  width={20}
+                />
                 {products?.reduce(
                   (total: number, product: any) => total + product.price,
                   0
