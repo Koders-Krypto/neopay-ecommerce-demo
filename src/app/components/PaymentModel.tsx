@@ -28,7 +28,7 @@ export const neo = {
   },
   contracts: {
     multicall3: {
-      address: "0x76C2Bdd0456c73151f20e3D7C937ba53BD1288b5",
+      address: "0x53a942df46b7253c5aBDE42F39ffaDE279B2d32B",
       blockCreated: 992350,
     },
   },
@@ -243,7 +243,7 @@ export default function PaymentModel(props: any) {
   const [hash, setHash] = useState("");
   const explorer = "https://evm.ngd.network/";
   const unwatch = client.watchContractEvent({
-    address: "0xD0d4C08136877F7E25A355900B20100fBF19562A",
+    address: "0xFA4aBB6EC55CA20Fda79F7D50dE9aC58C932fa86",
     abi: erc20ABI,
     eventName: "Transfer",
     args: { to: "0xc160Efc3af51ebc6fC4c517cA941a6999Ce0beC0" },
@@ -256,7 +256,7 @@ export default function PaymentModel(props: any) {
   });
   const Token = {
     logoURI: "",
-    address: "0xD0d4C08136877F7E25A355900B20100fBF19562A",
+    address: "0xFA4aBB6EC55CA20Fda79F7D50dE9aC58C932fa86",
     name: "USDCoin",
     symbol: "USDC",
     decimals: "6",
